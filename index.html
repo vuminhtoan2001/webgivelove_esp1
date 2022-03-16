@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Phạm Tiến | I love you</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://imgur.com/CILKGax.png" type="image/x-icon"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinload.css">
+    <link rel="stylesheet" type="text/css" href=" https://fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <script type='text/javascript'> ! function (e, t, a) { function n() { c( ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 75%;-webkit-border-radius: 75%;-moz-border-radius: 75%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 3, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 300) } }(), n() }(window, document); </script>
+  <body>
+    <MARQUEE DIRECTION="LEFT" id="tutorial" LOOP=1
+    style="z-index: 99999999;position: absolute;font-family: 'Pacifico';margin:0px auto"
+    >
+      <h1 style="font-family: 'Pacifico';">Click on 💖
+         </h1>
+    </MARQUEE>
+    <div class="wrapper">
+      <!-- Preloader -->
+      <div id="preloader">
+        <div class="pre__container">
+          <div class="heart_spiner" id="begin"></div>
+        </div>
+      </div>
+      <div id="bg"></div>
+      <div class="content">
+        <header>
+          <h2 id="title"></h2>
+          <h4 id="desc"></h4>
+        </header>
+        <button id="yes" type="button" class="btn btn-danger btn-lg"> </button>
+        <button id="no" type="button" class="btn btn-info btn-lg"></button>
+      </div>
+    </div>
+
+    <!-- 4. Thay đổi nhạc -->
+    <!-- <audio id="autoplay" src="./sound/erik-cukak-remix-audio-lyrics-video.mp3"></audio>
+    <audio id="autoplay2" src="./sound/sound.mp3"></audio>
+    <audio id="autoplay3" src="./sound/havuongnang.mp3"></audio> -->
+    <!-- Typing effect -->
+    <MARQUEE DIRECTION="LEFT"><h1 style="font-family: 'Pacifico';">💖 Phạm Tiến💖</h1></MARQUEE>
+    <div class="container">
+      <p id="demo"style="z-index: 99999999;position: absolute;font-family: 'Pacifico';padding:5px;color: #ec9491 !important;
+      text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;font-size:1.4rem"></p>
+    </div>
+    <script>
+      if(document.documentElement.clientWidth > 768){
+        document.getElementById("demo").style.width = "450px";
+      }else if(document.documentElement.clientWidth > 576 && document.documentElement.clientWidth <= 768 ){
+        document.getElementById("demo").style.width = "450px";
+
+      }else{
+        document.getElementById("demo").style.width = "90%";
+
+      }
+      var i = 0;
+      var txt = `Đây là món quà sinh nhật anh tặng em! Nếu em có suy nghĩ ủa sao chữ load lâu vậy thì nhìn dòng chữ chạy bên trên😊. Còn do sao lại chúc mừng sinh nhật lại là tiếng Hàn thì em sẽ biết ngay thôi. Let's go!
+        `;
+        var speed = 140;
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./config.js"></script>
+    <script src="./js/main.js"></script>
+
+  </body>
+</html>

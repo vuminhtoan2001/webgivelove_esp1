@@ -1,0 +1,183 @@
+/* 3. Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-image:url('https://files.birthdaywishes.expert/wp-content/uploads/2019/03/Happy-Birthday-Orange-Green-Red-Balloons-Animated-GIF.gif'); /* change if the mask should have another color then white */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+	z-index:9999999; /* makes sure it stays on top */
+}
+
+.spinner {
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	font-size: 10px;
+	margin-left:-25px;
+}
+
+.spinner > div {
+	background-color: #fff;
+	height: 100%;
+	width: 6px;
+	display: inline-block;
+	-webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+	animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+	-webkit-animation-delay: -1.1s;
+	animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+	0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+	20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+	0%, 40%, 100% {
+	transform: scaleY(0.4);
+	-webkit-transform: scaleY(0.4);
+	}  20% {
+	transform: scaleY(1.0);
+	-webkit-transform: scaleY(1.0);
+	}
+}
+
+
+.pre__container {
+  position: relative;
+  width: 50%;
+  max-width: 365px;
+  margin: 0 auto;
+  top: 50%;
+}
+.heart_spiner {
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%) rotate(-135deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+  -o-transform: translate(-50%, -50%) rotate(-135deg);
+  -ms-transform: translate(-50%, -50%) rotate(-135deg);
+  transform: translate(-50%, -50%) rotate(-135deg);
+  background-color: rgb(243, 56, 69);
+}
+.heart_spiner:before,
+.heart_spiner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.heart_spiner:before {
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-animation:  move-h 4s infinite;
+  -moz-animation:     move-h 4s infinite;
+  -o-animation:       move-h 4s infinite;
+  animation:          move-h 4s infinite;
+}
+.heart_spiner:after {
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation:  move-v 4s -1s infinite;
+  -moz-animation:     move-v 4s -1s infinite;
+  -o-animation:       move-v 4s -1s infinite;
+  animation:          move-v 4s -1s infinite;
+}
+
+@-webkit-keyframes move-h {
+  0%    { left: -50%; }
+  25%   { left: 50%; }
+  50%   { left: 50%; }
+  75%   { left: -50%; }
+  100%  { left: -50%; }
+}
+@-moz-keyframes move-h {
+  0%    { left: -50%; }
+  25%   { left: 50%; }
+  50%   { left: 50%; }
+  75%   { left: -50%; }
+  100%  { left: -50%; }
+}
+@-o-keyframes move-h {
+  0%    { left: -50%; }
+  25%   { left: 50%; }
+  50%   { left: 50%; }
+  75%   { left: -50%; }
+  100%  { left: -50%; }
+}
+@keyframes move-h {
+  0%    { left: -50%; }
+  25%   { left: 50%; }
+  50%   { left: 50%; }
+  75%   { left: -50%; }
+  100%  { left: -50%; }
+}
+
+
+@-webkit-keyframes move-v {
+  0%    { top: -50%; }
+  25%   { top: 50%; }
+  50%   { top: 50%; }
+  75%   { top: -50%; }
+  100%  { top: -50%; }
+}
+@-moz-keyframes move-v {
+  0%    { top: -50%; }
+  25%   { top: 50%; }
+  50%   { top: 50%; }
+  75%   { top: -50%; }
+  100%  { top: -50%; }
+}
+@-o-keyframes move-v {
+  0%    { top: -50%; }
+  25%   { top: 50%; }
+  50%   { top: 50%; }
+  75%   { top: -50%; }
+  100%  { top: -50%; }
+}
+@keyframes move-v {
+  0%    { top: -50%; }
+  25%   { top: 50%; }
+  50%   { top: 50%; }
+  75%   { top: -50%; }
+  100%  { top: -50%; }
+}
